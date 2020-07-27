@@ -16,5 +16,5 @@ def normalEqn(X, y):
     """
     theta = np.zeros((X.shape[1], 1))
     pass
-    theta = np.linalg.inv(X.T @ X) @ X.T @ y
+    # theta = np.linalg.inv(X.T @ X) @ X.T @ y
     return theta

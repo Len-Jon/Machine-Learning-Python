@@ -15,7 +15,7 @@ def plotData(x, y):
     :return: None
     """
     pass
-    plt.scatter(x=x, y=y, c='red', marker='x')
-    plt.xlabel('Population')
-    plt.ylabel('Profit')
-    plt.show()
+    # plt.scatter(x=x, y=y, c='red', marker='x')
+    # plt.xlabel('Population')
+    # plt.ylabel('Profit')
+    # plt.show()

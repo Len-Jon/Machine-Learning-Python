@@ -18,6 +18,6 @@ def gradientDescentMulti(X, y, theta, alpha, num_iters):
 
     for i in range(num_iters):
         pass
-        theta -= alpha / m * ((X @ theta.T - y).T @ X)
-        J_history[i] = computeCostMulti(X, y, theta)
+        # theta -= alpha / m * ((X @ theta.T - y).T @ X)
+        # J_history[i] = computeCostMulti(X, y, theta)
     return theta, J_history

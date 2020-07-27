@@ -18,7 +18,7 @@ def featureNormalize(X):
     mu = np.zeros((1, X.shape[1]))
     sigma = np.zeros((1, X.shape[1]))
     pass
-    mu = np.mean(X_norm, axis=0)  # 列均值
-    sigma = np.std(X_norm, axis=0)  # 列标准差
-    X_norm = (X_norm - mu) / sigma
+    # mu = np.mean(X_norm, axis=0)  # 列均值
+    # sigma = np.std(X_norm, axis=0)  # 列标准差
+    # X_norm = (X_norm - mu) / sigma
     return X_norm, mu, sigma

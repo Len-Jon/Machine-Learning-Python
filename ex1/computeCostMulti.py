@@ -15,7 +15,7 @@ def computeCostMulti(X, y, theta):
     m = X.shape[0]
     J = 0
     pass
-    inner = np.power((X @ theta.T - y), 2)
-    J = np.sum(inner) / (2 * m)
+    # inner = np.power((X @ theta.T - y), 2)
+    # J = np.sum(inner) / (2 * m)
 
     return J

@@ -14,6 +14,6 @@ def warmUpExercise():
     """
     A = np.array([[0]])
     pass
-    A = np.eye(5)
+    # A = np.eye(5)
 
     return A
