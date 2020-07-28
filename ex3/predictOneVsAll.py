@@ -18,6 +18,6 @@ def predictOneVsAll(all_theta, X):
     num_labels = all_theta.shape[0]
     p = np.zeros((m, 1))
     pass
-    h = sigmoid(X @ all_theta.T)
-    p = (np.argmax(h, axis=1) + 1).reshape(-1, 1)
+    # h = sigmoid(X @ all_theta.T)
+    # p = (np.argmax(h, axis=1) + 1).reshape(-1, 1)
     return p

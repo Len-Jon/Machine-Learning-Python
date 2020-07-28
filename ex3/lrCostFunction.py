@@ -19,11 +19,11 @@ def lrCostFunction(theta, X, y, _lambda):
     J = 0
     grad = np.zeros(theta.shape)
     pass
-    h = sigmoid(X @ theta.T)
-    J = np.sum(-y * np.log(h) - (1 - y) * np.log(1 - h)) / m \
-        + (_lambda / (2 * m)) * np.sum(np.power(theta[:, 1:theta.shape[1]], 2))
-    grad = ((h - y).T @ X) / m
-    grad_reg = _lambda / m * theta
-    grad_reg[0, 0] = 0
-    grad += grad_reg
+    # h = sigmoid(X @ theta.T)
+    # J = np.sum(-y * np.log(h) - (1 - y) * np.log(1 - h)) / m \
+    #     + (_lambda / (2 * m)) * np.sum(np.power(theta[:, 1:theta.shape[1]], 2))
+    # grad = ((h - y).T @ X) / m
+    # grad_reg = _lambda / m * theta
+    # grad_reg[0, 0] = 0
+    # grad += grad_reg
     return J, grad
