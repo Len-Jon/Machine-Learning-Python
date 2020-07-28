@@ -11,7 +11,6 @@
 import numpy as np
 
 from ex2.costFunction import costFunction
-from ex2.sigmoid import sigmoid
 
 
 def costFunctionReg(theta, X, y, _lambda):
