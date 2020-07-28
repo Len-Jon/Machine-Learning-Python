@@ -16,6 +16,6 @@ def predict(theta, X):
     m = X.shape[0]
     p = np.zeros((m, 1))
     pass
-    probability = sigmoid(X @ theta.T)
-    p = np.array([1 if x >= 0.5 else 0 for x in probability]).reshape(-1, 1)
+    # probability = sigmoid(X @ theta.T)
+    # p = np.array([1 if x >= 0.5 else 0 for x in probability]).reshape(-1, 1)
     return p

@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-% ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost of a particular choice of theta.
 %               You should set J to the cost.
 %               Compute the partial derivatives and set grad to the partial
@@ -21,12 +20,12 @@ def costFunctionReg(theta, X, y, _lambda):
     J = 0
     grad = np.zeros(theta.shape)
     pass
-    J, grad = costFunction(theta, X, y)
-
-    J_reg = (_lambda / (2 * m)) * np.sum(np.power(theta[:, 1:theta.shape[1]], 2))
-    grad_reg = _lambda / m * theta
-    grad_reg[0, 0] = 0
-
-    J += J_reg
-    grad += grad_reg
+    # J, grad = costFunction(theta, X, y)
+    #
+    # J_reg = (_lambda / (2 * m)) * np.sum(np.power(theta[:, 1:theta.shape[1]], 2))
+    # grad_reg = _lambda / m * theta
+    # grad_reg[0, 0] = 0
+    #
+    # J += J_reg
+    # grad += grad_reg
     return J, grad

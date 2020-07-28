@@ -20,7 +20,7 @@ def costFunction(theta, X, y):
     J = 0
     grad = np.zeros(theta.shape)
     pass
-    h = sigmoid(X @ theta.T)
-    J = np.sum(-y * np.log(h) - (1 - y) * np.log(1 - h)) / m
-    grad = ((h - y).T @ X) / m
+    # h = sigmoid(X @ theta.T)
+    # J = np.sum(-y * np.log(h) - (1 - y) * np.log(1 - h)) / m
+    # grad = ((h - y).T @ X) / m
     return J, grad

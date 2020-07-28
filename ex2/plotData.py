@@ -29,9 +29,9 @@ def plotData(X, y):
     """
     fig, ax = plt.subplots(figsize=(12, 8))
     pass
-    pos = np.where(y == 1)[0]
-    neg = np.where(y == 0)[0]
-    ax.scatter(X[pos, 0], X[pos, 1], s=100, c='k', marker='+', edgecolors='k', label='pos')
-    ax.scatter(X[neg, 0], X[neg, 1], s=100, c='#ffff00', marker='o', edgecolors='k', label='neg')
+    # pos = np.where(y == 1)[0]
+    # neg = np.where(y == 0)[0]
+    # ax.scatter(X[pos, 0], X[pos, 1], s=100, c='k', marker='+', edgecolors='k', label='pos')
+    # ax.scatter(X[neg, 0], X[neg, 1], s=100, c='#ffff00', marker='o', edgecolors='k', label='neg')
 
     return ax

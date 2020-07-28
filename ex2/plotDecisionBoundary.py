@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-    这个好像不是作业内容
+这个也不是作业内容
 :Time:  2020/7/28 13:07
 :Author:  lenjon
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 from ex2.mapFeature import mapFeature
 from ex2.plotData import plotData
