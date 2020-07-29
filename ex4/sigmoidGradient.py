@@ -18,5 +18,5 @@ from ex4.sigmoid import sigmoid
 def sigmoidGradient(z):
     g = np.zeros(z.shape)
     pass
-    g = sigmoid(z) * (1 - sigmoid(z))
+    # g = sigmoid(z) * (1 - sigmoid(z))
     return g
