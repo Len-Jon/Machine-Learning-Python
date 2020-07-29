@@ -100,7 +100,7 @@ def nnCostFunction(nn_params, input_layer_size, hidden_layer_size, num_labels, X
     #     Theta2_grad = Theta2_grad + d3t.T @ a2t
     #
     #     z2t = np.insert(z2t, 0, values=np.ones(1))  # 补上偏置单元
-    #     d2t = np.multiply((Theta2.T @ d3t.T).T, sigmoidGradient(z2t))  # 链式求导法则
+    #     d2t = np.multiply(d3t @ Theta2, sigmoidGradient(z2t))  # 链式求导法则
     #     Theta1_grad = Theta1_grad + (d2t[:, 1:]).T @ a1t
     #
     # Theta1_grad = Theta1_grad / m
