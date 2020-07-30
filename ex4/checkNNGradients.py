@@ -23,10 +23,7 @@ def checkNNGradients(_lambda=0):
     X = debugInitializeWeights(m, input_layer_size - 1)
     y = np.array([[2 + i % num_labels for i in range(m)]]).T
     nn_params = np.append(Theta1.flatten(), Theta2.flatten())
-
-    def costFunc(p):
-        return nnCostFunction(p, input_layer_size, hidden_layer_size, num_labels, X, y, _lambda)
-
+    costFunc = lambda p: nnCostFunction(p, input_layer_size, hidden_layer_size, num_labels, X, y, _lambda)
     cost, grad = costFunc(nn_params)
     numgrad = computeNumericalGradient(costFunc, nn_params)
     a = numgrad.flatten()
