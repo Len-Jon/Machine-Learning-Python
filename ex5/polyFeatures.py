@@ -14,6 +14,6 @@ def polyFeatures(X, p):
     m = X.shape[0]
     X_poly = np.zeros((m, p))
     pass
-    for i in range(p):
-        X_poly[:, i:i + 1] = np.power(X, i + 1)
+    # for i in range(p):
+    #     X_poly[:, i:i + 1] = np.power(X, i + 1)
     return X_poly

@@ -20,10 +20,10 @@ def learningCurve(X, y, Xval, yval, _lambda):
     error_train = np.zeros(m)
     error_val = np.zeros(m)
     pass
-    for i in range(m):
-        result = trainLinearReg(X[:i + 1, :], y[:i + 1, :], _lambda)
-        theta = result.x
-        error_train[i], _ = linearRegCostFunction(X[:i + 1, :], y[:i + 1, :], theta, 0)  # lambda设置为0
-        error_val[i], _ = linearRegCostFunction(Xval, yval, theta, 0)
+    # for i in range(m):
+    #     result = trainLinearReg(X[:i + 1, :], y[:i + 1, :], _lambda)
+    #     theta = result.x
+    #     error_train[i], _ = linearRegCostFunction(X[:i + 1, :], y[:i + 1, :], theta, 0)  # lambda设置为0
+    #     error_val[i], _ = linearRegCostFunction(Xval, yval, theta, 0)
 
     return error_train, error_val

@@ -25,13 +25,13 @@ def linearRegCostFunction(X, y, theta, _lambda):
     J = 0
     grad = np.zeros(theta.shape)
     pass
-    h = X @ theta.T
-    J = np.sum(np.power(h - y, 2)) / (2 * m)
-    J_reg = (_lambda / (2 * m)) * np.sum(np.power(theta[:, 1:theta.shape[1]], 2))
-    J += J_reg
-
-    grad = ((h - y).T @ X) / m
-    grad_reg = _lambda / m * theta
-    grad_reg[0, 0] = 0
-    grad += grad_reg
+    # h = X @ theta.T
+    # J = np.sum(np.power(h - y, 2)) / (2 * m)
+    # J_reg = (_lambda / (2 * m)) * np.sum(np.power(theta[:, 1:theta.shape[1]], 2))
+    # J += J_reg
+    #
+    # grad = ((h - y).T @ X) / m
+    # grad_reg = _lambda / m * theta
+    # grad_reg[0, 0] = 0
+    # grad += grad_reg
     return J, grad
