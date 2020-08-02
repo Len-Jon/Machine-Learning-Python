@@ -15,5 +15,5 @@ import numpy as np
 def gaussianKernel(x1, x2, sigma):
     sim = 0
     pass
-    sim = np.exp(-(np.sum((x1 - x2) ** 2) / (2 * (sigma ** 2))))
+    # sim = np.exp(-(np.sum((x1 - x2) ** 2) / (2 * (sigma ** 2))))
     return sim

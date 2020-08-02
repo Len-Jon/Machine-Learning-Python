@@ -60,6 +60,9 @@ def email2TokenList(email):
 
 def processEmail(email):
     print('==== Processed Email ====\n')
+    vocab = pd.read_table('./data/vocab.txt', header=None).iloc[:, -1]
+    word_indices = []
+    token = email2TokenList(email)  # 筛选出来的单词,源码过于冗杂，python可以优化
     """ 你要完成的是这里
     Instructions: Fill in this function to add the index of str to
     %               word_indices if it is in the vocabulary. At this point
@@ -73,16 +76,12 @@ def processEmail(email):
     %               'action', then, you should add 18 to the word_indices
     %               vector (e.g., word_indices = [word_indices ; 18]; ).
     """
-    vocab = pd.read_table('./data/vocab.txt', header=None).iloc[:, -1]
-    word_indices = []
-    token = email2TokenList(email)  # 筛选出来的单词,源码过于冗杂，python可以优化
     pass
     vocab = list(vocab)
-    # word_indices = [vocab.index(c) for c in token]
-    for word in token:
-        if word in vocab:
-            word_indices.append(vocab.index(word) + 1)
-    # 这样也可以，但是不好看自己的返回值是否正确，跟作业上的要求有区别，后面还要把它排序...
-    # word_indices = [i + 1 for i in range(len(vocab)) if (vocab[i] in token)]
-
+    # # word_indices = [vocab.index(c) for c in token]
+    # for word in token:
+    #     if word in vocab:
+    #         word_indices.append(vocab.index(word) + 1)
+    # # 这样也可以，但是不好看自己的返回值是否正确，跟作业上的要求有区别，后面还要把它排序...
+    # # word_indices = [i + 1 for i in range(len(vocab)) if (vocab[i] in token)]
     return word_indices

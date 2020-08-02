@@ -25,14 +25,14 @@ def dataset3Params(X, y, Xval, yval):
     gamma = np.power(C_values, -2) / 2  # 从这里面选
     gamma = tuple(map(lambda x: (x ** -2) / 2, [x for x in C_values]))
     pass
-    best_score = 0
-    for c in C_values:
-        for g in gamma:
-            model = svm.SVC(C=c, kernel='rbf', gamma=g)
-            model.fit(X, y.flatten())
-            this_score = model.score(Xval, yval)
-            if this_score > best_score:
-                best_score = this_score
-                C = c
-                sigma = C_values[gamma.index(g)]
+    # best_score = 0
+    # for c in C_values:
+    #     for g in gamma:
+    #         model = svm.SVC(C=c, kernel='rbf', gamma=g)
+    #         model.fit(X, y.flatten())
+    #         this_score = model.score(Xval, yval)
+    #         if this_score > best_score:
+    #             best_score = this_score
+    #             C = c
+    #             sigma = C_values[gamma.index(g)]
     return C, sigma

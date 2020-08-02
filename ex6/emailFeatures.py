@@ -19,7 +19,7 @@ def emailFeatures(word_indices):
     n = 1899  # 词汇总数
     x = np.zeros(n)
     pass
-    x[word_indices] = 1
+    # x[word_indices] = 1
     return x
 
 
