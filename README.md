@@ -4,6 +4,8 @@
 
 我尽力还原了MATLAB目录结构
 
+数据文件超过3个我会把它放进data文件夹里面
+
 文件名、函数、变量名基本同步MATLAB的源码
 
 用`jupyter-notebook`或者`jupyter lab`都可以
