@@ -15,7 +15,5 @@ def featureNormalize(X):
     """
     mu = X.mean(axis=0)
     sigma = X.std(axis=0)
-    for i in range(X.shape[0]):
-        X[i:i + 1, :] = (X[i:i + 1, :] - mu) / sigma
-
+    X = (X - mu) / sigma
     return X, mu, sigma
