@@ -19,6 +19,6 @@ def pca(X):
     U = np.zeros(n)
     S = np.zeros(n)
     pass
-    Sigma = 1 / m * X.T @ X  # 求协方差矩阵
-    U, S, V = np.linalg.svd(Sigma)  # 求协方差矩阵特征值
+    # Sigma = 1 / m * X.T @ X  # 求协方差矩阵
+    # U, S, V = np.linalg.svd(Sigma)  # 求协方差矩阵特征值
     return U, S

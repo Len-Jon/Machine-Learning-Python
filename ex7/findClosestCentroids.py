@@ -22,11 +22,11 @@ def findClosestCentroids(X, centroids):
     # You need to return the following variables correctly.
     idx = np.zeros((X.shape[0], 1), dtype=int)
     pass
-    for i in range(X.shape[0]):
-        min_dist = sys.maxsize
-        for j in range(K):
-            dist = np.sum((X[i, :] - centroids[j, :]) ** 2)
-            if dist < min_dist:
-                min_dist = dist
-                idx[i] = j
+    # for i in range(X.shape[0]):
+    #     min_dist = sys.maxsize
+    #     for j in range(K):
+    #         dist = np.sum((X[i, :] - centroids[j, :]) ** 2)
+    #         if dist < min_dist:
+    #             min_dist = dist
+    #             idx[i] = j
     return idx

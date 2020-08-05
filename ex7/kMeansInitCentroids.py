@@ -12,6 +12,6 @@ import numpy as np
 def kMeansInitCentroids(X, K):
     centroids = np.zeros((K, X.shape[1]))
     pass
-    idx = np.random.randint(0, X.shape[0], size=K)
-    centroids = X[idx, :]
+    # idx = np.random.randint(0, X.shape[0], size=K)
+    # centroids = X[idx, :]
     return centroids

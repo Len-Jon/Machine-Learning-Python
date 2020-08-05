@@ -20,6 +20,6 @@ import numpy as np
 def recoverData(Z, U, K):
     X_rec = np.zeros((Z.shape[0], U.shape[0]))
     pass
-    U_reduced = U[:, :K]
-    X_rec = Z @ U_reduced.T
+    # U_reduced = U[:, :K]
+    # X_rec = Z @ U_reduced.T
     return X_rec

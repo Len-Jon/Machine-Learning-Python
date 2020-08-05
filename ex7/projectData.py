@@ -17,6 +17,6 @@ def projectData(X, U, K):
     # 找K个最能代表原数据的向量
     Z = np.zeros((X.shape[0], K))
     pass
-    U_reduce = U[:, :K]
-    Z = X @ U_reduce
+    # U_reduce = U[:, :K]
+    # Z = X @ U_reduce
     return Z

@@ -16,7 +16,7 @@ def computeCentroids(X, idx, K):
     m, n = X.shape
     centroids = np.zeros((K, n))
     pass
-    for i in range(K):
-        indices = np.where(idx == i)[0]
-        centroids[i, :] = (np.sum(X[indices, :], axis=0) / indices.shape[0]).ravel()  # 各维度与聚类中心的平均距离
+    # for i in range(K):
+    #     indices = np.where(idx == i)[0]
+    #     centroids[i, :] = (np.sum(X[indices, :], axis=0) / indices.shape[0]).ravel()  # 各维度与聚类中心的平均距离
     return centroids
