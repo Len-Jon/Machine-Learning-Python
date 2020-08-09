@@ -17,6 +17,6 @@ def estimateGaussian(X):
     mu = np.zeros((n, 1))
     sigma2 = np.zeros((n, 1))
     pass
-    mu = X.mean(axis=0)
-    sigma2 = X.var(axis=0)
+    # mu = X.mean(axis=0)
+    # sigma2 = X.var(axis=0)
     return mu, sigma2

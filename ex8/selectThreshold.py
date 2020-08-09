@@ -24,13 +24,13 @@ def selectThreshold(yval, pval):
 
     for epsilon in np.linspace(np.min(pval), np.max(pval), num=1001):
         pass
-        predictions = np.less(pval, epsilon)
-        fp = np.sum(np.logical_and(predictions, yval == 0))
-        fn = np.sum(np.logical_and(np.logical_not(predictions), yval == 1))
-        tp = np.sum(np.logical_and(predictions, yval))
-        precision = tp / (tp + fp)
-        recall = tp / (tp + fn)
-        f1 = (2 * precision * recall) / (precision + recall)
+        # predictions = np.less(pval, epsilon)
+        # fp = np.sum(np.logical_and(predictions, yval == 0))
+        # fn = np.sum(np.logical_and(np.logical_not(predictions), yval == 1))
+        # tp = np.sum(np.logical_and(predictions, yval))
+        # precision = tp / (tp + fp)
+        # recall = tp / (tp + fn)
+        # f1 = (2 * precision * recall) / (precision + recall)
         pass
         if f1 > best_f1:
             best_f1 = f1
